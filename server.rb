@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World"
+  File.new('public/hello.html').readlines
 end
 
 get '/wyncode' do
